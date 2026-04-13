@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:5000/api"
+baseURL: "https://restaurant-backend-3sg7.onrender.com"
 });
 
 // Response interceptor for debugging
