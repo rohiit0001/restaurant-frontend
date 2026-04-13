@@ -5,7 +5,6 @@ import Navbar from "../components/Navbar";
 
 function AdminDashboard() {
   const navigate = useNavigate();
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [activeTab, setActiveTab] = useState("stats");
   const [menuItems, setMenuItems] = useState([]);
   const [orders, setOrders] = useState([]);
@@ -36,7 +35,6 @@ function AdminDashboard() {
       navigate("/admin-login");
       return;
     }
-    setIsAuthenticated(true);
 
     fetchMenuItems();
     fetchOrders();

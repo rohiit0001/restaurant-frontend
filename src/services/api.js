@@ -1,5 +1,5 @@
 import axios from "axios";
-import axios from "axios";
+
 
 const API = axios.create({
   baseURL: "https://restaurant-backend-3sg7.onrender.com"
