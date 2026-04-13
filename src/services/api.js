@@ -1,10 +1,8 @@
 import axios from "axios";
+import axios from "axios";
 
 const API = axios.create({
-  baseURL: process.env.REACT_APP_API_URL || "https://restaurant-backend-3sg7.onrender.com",
-  headers: {
-    "Content-Type": "application/json"
-  }
+  baseURL: "https://restaurant-backend-3sg7.onrender.com"
 });
 
 // 🔥 Request interceptor
