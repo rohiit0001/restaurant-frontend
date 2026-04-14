@@ -1,8 +1,10 @@
 import axios from "axios";
 
+// Use environment variable for backend URL, fallback to localhost for development
+const baseURL = process.env.REACT_APP_API_URL || "http://localhost:5000/api";
 
 const API = axios.create({
-  baseURL: "https://restaurant-backend-3sg7.onrender.com"
+  baseURL: baseURL
 });
 
 // 🔥 Request interceptor
