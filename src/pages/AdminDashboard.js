@@ -44,7 +44,7 @@ function AdminDashboard() {
 
   const fetchMenuItems = async () => {
     try {
-      const res = await API.get("/menu");
+      const res = await API.get("/api/menu");
       setMenuItems(res.data || []);
     } catch (err) {
       console.log(err);
