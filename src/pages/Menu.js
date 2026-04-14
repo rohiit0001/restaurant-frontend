@@ -15,10 +15,10 @@ function Menu() {
   useEffect(() => {
     setLoading(true);
     setError(null);
-    let url = "/menu";
+    let url = "/api/menu";
 
     if (category !== "All") {
-      url = `/menu?category=${category}`;
+      url = `/api/menu?category=${category}`;
     }
 
     API.get(url)
